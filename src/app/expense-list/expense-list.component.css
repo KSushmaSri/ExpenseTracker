@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}  
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}  
+th {
+   background: #55428a;
+   color: white;
+}
+tr{
+   background:#ffffff;
+}
+tr:hover {
+   background: #f1f1f1;
+}
+button{
+    background:#af4ca5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+}
+select{
+    cursor: pointer;
+}
+select:hover{
+    border: 3px solid purple;
+}

@@ -1,1 +1,31 @@
-<p>expense-list works!</p>
+
+
+<div class="container">
+  <h2>Expense List</h2>
+
+  <select [(ngModel)]="selectedFilter" (change)="applyFilter()">
+    <option value="all">All Expenses</option>
+    <option value="month">This Month</option>
+    <option value="week">This Week</option>
+  </select>
+
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let expense of filteredExpenses">
+      <td>{{ expense.category }}</td>
+      <td>{{ expense.description }}</td>
+      <td>{{ expense.amount }}</td>
+      <td>{{ expense.date }}</td>
+      <td>
+        <button (click)="deleteExpense(expense.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
+

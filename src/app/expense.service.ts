@@ -10,7 +10,7 @@ export class ExpenseService {
 
   constructor(private http: HttpClient) { }
 
-  private baseurl='';
+  private baseurl='http://localhost:8081/api/expenses';
   getExpenses(): Observable<any>{
     return this.http.get(`${this.baseurl}`);
 

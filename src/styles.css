@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+ 
+  
+  /* Navbar */
+  nav {
+    background: #2c3e50;
+    height: 8vh;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav .logo{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 12px;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: wavy;
+    color: #FFD700;
+  }
+  
+  /* Footer */
+  footer {
+    background: #34495e;
+    color: #dadada;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+  }
+  
